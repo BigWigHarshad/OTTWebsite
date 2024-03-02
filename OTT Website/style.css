@@ -3339,6 +3339,67 @@ header ul li a{
     background-repeat: no-repeat
 }
 
+#Dhamaalfront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/6/60/Dhamaal_2007.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Dhamaal_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYmQyNGRmMjMtM2I1Zi00OTBiLWIyMzgtZGZkODQ5MGRiN2QzXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#NoProblemfront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/f/f1/No_problem_poster.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#NoProblem_info{
+    background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/no-problem-et00005132-24-03-2017-16-19-16.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#HeyyBabyyfront{
+    background-image: url(https://m.media-amazon.com/images/S/pv-target-images/81411f3c2031ca0ad932ddd7c7bb55fa79caabe922e5a32ba70c4fc64caabf24.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#HeyyBabyy_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZTBhNzFjNTAtNWQ4OC00ZjdjLThlYjktNjQ4OTE3YjdmYjA1XkEyXkFqcGdeQXVyMzQ5MzkwMDY@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#Welcomefront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Welcome_poster_2007.jpg/220px-Welcome_poster_2007.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Welcome_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYWVkMTU2NGYtOTM3OS00NDljLWFmNTAtNzgzYjQyMzUzMDM1XkEyXkFqcGdeQXVyMjY1MjkzMjE@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+#BhagamBhagfront{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/BhagamBhag.jpg/220px-BhagamBhag.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#BhagamBhag_info{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMWUwOTZlNTItZDA3Zi00MmQ5LWE1MDQtZTA1Yzg3ZGIwNWU5XkEyXkFqcGdeQXVyODAzNzAwOTU@._V1_.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 /* --------card hover background css------------ */
 .bg {
     background-color: rgba(41, 40, 40, 0.486);
@@ -3371,6 +3432,30 @@ header ul li a{
     transition: 1s;
 }
 
+#ExploreMoreButton{
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+#ExploreMoreButton:hover{
+   transform: scale(1.06);
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid white;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.5s;
+}
+
 footer{
     margin: 0px 20px;
     /* border: 2px solid white; */
@@ -3382,6 +3467,12 @@ footer{
     font-size: 30px;
     color: white;
     margin-right: 30px;
+}
+.footer-icon a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: lightgreen;
+    /* margin-right: 30px; */
 }
 #copyrightlogo{
     height: 30px;
