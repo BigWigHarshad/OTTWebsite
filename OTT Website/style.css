@@ -57,12 +57,15 @@ header ul{
 header ul li{
     position: relative;
     list-style: none;
+    transition: 0.5s;
 
 }
 
 header ul li a:hover{
+    /* transform: scale(2); */
     color: lightgreen;
-    transition: 1s;
+    transition: 0.5s;
+    
 
 }
 
@@ -128,9 +131,12 @@ header ul li a{
     background-color: transparent;
     color: white;
     border: 1px solid white;
+    transition: 0.5s;
+
 }
 
 #loginbtn:hover {
+    transform: scale(1.05);
     background-color: lightgreen;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
     -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -139,7 +145,7 @@ header ul li a{
     -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
     -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
     color: black;
-    transition: 1S;
+    transition: 0.5s;
 }
 
 #movieslogo {
@@ -404,7 +410,8 @@ header ul li a{
 #Drama,
 #Horror,
 #Thriller,
-#Comedy{
+#Comedy,
+#SelectGenres{
     padding: 10px;
     height: auto;
 }
@@ -3440,6 +3447,8 @@ header ul li a{
     background-color: transparent;
     color: white;
     border: 1px solid white;
+    transition: 0.5s;
+
 }
 
 #ExploreMoreButton:hover{
@@ -3548,6 +3557,7 @@ footer{
 .LoginBgImg{
     width: 100%;
     height: 100%;
+    filter: blur(2px);
 }
 
 #LoginBtnSignInBtn:hover{
@@ -3567,4 +3577,40 @@ footer{
 #Loginlogo{
     width: 100px;
     /* height: 80px; */
+}
+
+#LanguagesList{
+    font-size: 28px;
+    width: 200px;
+    margin-top: 20px;
+}
+#LanguagesList input,
+#SelectGenres input{
+    height: 20px;
+    width: 20px;
+}
+
+.StartStreamingBtn{
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+
+}
+.StartStreamingBtn:hover{
+    transform: scale(1.06);
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid white;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.5s;
 }
