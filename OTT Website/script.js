@@ -6,7 +6,7 @@ window.addEventListener("scroll",function(){
 function moneyheiest() {
     document.getElementById("content").innerHTML='When the national mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.';
     document.querySelector('#content').style.float="left";
-    document.querySelector('#imgcontainer').style.background="url('https://wallpapercave.com/wp/wp8751913.jpg') center center / cover";
+    document.querySelector('#imgcontainer').style.background="url('https://wallpapercave.com/wp/wp8751913.jpg') contain no-repeat";
     document.querySelector('#moneyheistimg').style.border= "10px solid black";
     let description="When the national mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.";
 
