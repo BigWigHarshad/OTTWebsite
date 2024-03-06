@@ -16,31 +16,64 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <section>
-        <div class="Container">
-            <!-- <img src="https://png.pngtree.com/background/20210710/original/pngtree-creative-black-gold-21st-shanghai-international-film-festival-banner-picture-image_1061201.jpg" alt="" class="LoginBgImg"> -->
-            <img src="https://w.wallhaven.cc/full/0w/wallhaven-0w2de6.jpg" alt="" class="LoginBgImg">
-            <div class="loginContaier">
-                <br>
-                <img src="images/C1(transparent white) (2).png" alt="logo" id="Loginlogo">
-                <br>
-                <h1>Sign Up</h1>
-                <input type="text" placeholder="Enter Username" id="SignUpUsernameInput" required>
-                <br>
-                <input type="email" placeholder="Enter E-mail Address" id="SignUpEmailInput" required>
-                <br>
-                <input type="password" placeholder="Enter Passward" id="SignupPasswardInput" required>
-                <br>
-                <input type="password" placeholder="Re-enter Passward" id="SignupRe-enterPasswardInput">
-                <br><br>
-                <a href="SelectLanguage.html">
-                <button id="LoginBtnSignInBtn">Sign Up</button>
-            </a>
-                <br><br>
-                <p>You already have an account <a href="Sign-In.html">Sign in</a>.</p>
+<body style="background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);">
+    <section id="SelectLanguage">
+        <img src="images/C1(transparent white) (2).png" alt="logo" id="logo"><br><br><br>
+
+        <h2>Select Languages</h2>
+        <br>
+        <div class="d-flex justify-content-around flex-wrap mx-3" id="LanguagesListContainer">
+            <input type="checkbox" id="English" class="English">
+            <div class="EnglishBox">
+                <label for="English">English</label>
+            </div>
+
+            <input type="checkbox" id="Marathi" class="Marathi">
+            <div class="MarathiBox">
+                <label for="Marathi">मराठी</label>
+            </div>
+
+
+            <input type="checkbox" id="Hindi" class="Hindi">
+            <div class="HindiBox">
+                <label for="Hindi">हिंदी</label>
+            </div>
+
+
+            <input type="checkbox" id="Kannada" class="Kannada">
+            <div class="KannadaBox">
+                <label for="Kannada">ಕನ್ನಡ</label>
             </div>
             
+            
+            <input type="checkbox" id="Tamil" class="Tamil">
+            <div class="TamilBox">
+                <label for="Tamil">தமிழ்</label>
+            </div>
+
+
+            <input type="checkbox" id="Telegu" class="Telegu">
+            <div class="TeleguBox">
+                <label for="Telegu">టెలిగు</label>
+            </div>
+            
+
+            <input type="checkbox" id="Malayalam" class="Malayalam">
+            <div class="MalayalamBox">
+                <label for="Malayalam">മലയാളം</label>
+            </div>
+
+        </div>
+
+        <br><br>
+        <center>
+            <a href="SelectGenres.html">
+        <button id="SelectLanguageNextBtn">Next</button>
+    </a>
+    </center>
+
+        <br><br>
         
     </section>
 
@@ -71,6 +104,5 @@
         </a>Copyright@2024;Designed By Bigwigcorp.com 
     </center>
     </div>
-    
 </body>
 </html>

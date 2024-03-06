@@ -139,7 +139,7 @@ header ul li a{
     transform: scale(1.05);
     background-color: lightgreen;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
-    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(0, 0, 0, 0.54) inset;
     -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
     box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
     -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
@@ -3511,7 +3511,7 @@ footer{
 .loginContaier{
     width: 300px;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.667);
+    background-color: rgba(0, 0, 0, 0.783);
     text-align: center;
     color: white;
     position: absolute;
@@ -3519,9 +3519,12 @@ footer{
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
-  box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
-    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
-    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+  /* box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.59) inset;
+-webkit-box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.59) inset;
+-moz-box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.59) inset; */
+box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
+-webkit-box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
+-moz-box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
     
 }
 #SignInUsernameInput,
@@ -3612,5 +3615,194 @@ footer{
     box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
     -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
     -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.5s;
+}
+
+
+#SelectLanguage,
+#SelectGenres{
+    background-image: url(images/SelectLanguageBackgroundImg.png);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.EnglishBox, 
+.MarathiBox,
+.HindiBox,
+.KannadaBox,
+.TamilBox,
+.TeleguBox,
+.MalayalamBox{
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#English:checked ~ .EnglishBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Marathi:checked ~ .MarathiBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Hindi:checked ~ .HindiBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Kannada:checked ~ .KannadaBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Tamil:checked ~ .TamilBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Telegu:checked ~ .TeleguBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Malayalam:checked ~ .MalayalamBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+.English,
+.Marathi,
+.Hindi,
+.Kannada,
+.Tamil,
+.Telegu,
+.Malayalam,
+.CheckBox{
+    display: none;
+}
+
+
+#SelectLanguageNextBtn{
+    width: 180px;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+#SelectLanguageNextBtn:hover{
+    transform: scale(1.06);
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid white;
+    box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
+    box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -webkit-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    -moz-box-shadow: -3px -1px 51px 4px rgba(255, 255, 255, 0.59);
+    transition: 0.5s;
+}
+
+
+.ActionBox,
+.HorrorBox,
+.ThrillerBox,
+.RomanticBox,
+.DramaBox,
+.Science_FictionBox,
+.ComedyBox,
+.DocumentaryBox,
+.AdventureBox,
+.MysteryBox{
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#Action:checked ~ .ActionBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Horror:checked ~ .HorrorBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Thriller:checked ~ .ThrillerBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Romantic:checked ~ .RomanticBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Drama:checked ~ .DramaBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Science_Fiction:checked ~ .Science_FictionBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Comedy:checked ~ .ComedyBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Documentary:checked ~ .DocumentaryBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Adventure:checked ~ .AdventureBox{
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+}
+
+#Mystery:checked ~ .MysteryBox{
+    background-color: lightgreen;
+    color: black;
     transition: 0.5s;
 }
