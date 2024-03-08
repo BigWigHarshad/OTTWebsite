@@ -63,7 +63,7 @@ header ul li{
 
 header ul li a:hover{
     /* transform: scale(2); */
-    color: lightgreen;
+    color: #ffe79e;
     transition: 0.5s;
     
 
@@ -121,6 +121,8 @@ header ul li a{
     font-weight: bold;
     margin-top: 40px;
     padding-right: 30px;
+    text-align: right;
+    /* background-image: linear-gradient(-60deg,rgba(0, 0, 0, 0.72) 20%, hwb(0 50% 50% / -93)); */
 }
 #loginbtn {
     width: 80px;
@@ -137,7 +139,7 @@ header ul li a{
 
 #loginbtn:hover {
     transform: scale(1.05);
-    background-color: lightgreen;
+    background-color: #ffe79e;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
     -webkit-box-shadow: -3px -1px 51px -5px rgba(0, 0, 0, 0.54) inset;
     -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -164,9 +166,9 @@ header ul li a{
     background-color: black;
     color: white;
     border: 1px solid white;
-    position: absolute;
+    /* position: absolute;
     top: 75%;
-    left: 8%;
+    left: 8%; */
 }
 
 #watchBtn {
@@ -178,21 +180,27 @@ header ul li a{
     background-color: black;
     color: white;
     border: 1px solid white;
-    position: absolute;
+    /* position: absolute;
     top: 75%;
-    left: 20%;
+    left: 20%; */
 }
 
 #logo {
     /* height: 130px; */
-    width: 120px;
+    width: 65px;
+    height: 65px;
     margin: 0px;
     padding: 0px;
+}
+.imagesSelector{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
 }
 
 #watchBtn:hover,
 #watchTrailerBtn:hover {
-    background-color: lightgreen;
+    background-color: #ffe79e;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
     -webkit-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
     -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -204,9 +212,10 @@ header ul li a{
 }
 
 .imagesset {
-    height: 50px;
+    height: 140px;
     width: 100px;
     border-radius: 10px;
+    border: 1px solid;
 }
 
 .imgcontainer {
@@ -218,6 +227,7 @@ header ul li a{
 .imagesset:hover {
     border: 1px solid whitesmoke;
 }
+
 
 .categoryframe a {
     color: white;
@@ -3434,7 +3444,7 @@ header ul li a{
 
 .watchbtninsidecard:hover,
 .trailerbtninsidecard:hover {
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 1s;
 }
@@ -3453,7 +3463,7 @@ header ul li a{
 
 #ExploreMoreButton:hover{
    transform: scale(1.06);
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     border: 1px solid white;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -3488,10 +3498,10 @@ footer{
     width: 65px;
 }
 .copyrightsection{
-    background-color: gray;
+    background-color: black;
     margin-top: 10px;
     border-radius: 5px;
-    color: black;
+    color: white;
 }
 
 /* ------------------Ligin Page--------------------------- */
@@ -3527,12 +3537,26 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 -moz-box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
     
 }
+
+.verifybtn{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
 #SignInUsernameInput,
 #SignInPaswardInput,
 #SignUpUsernameInput,
 #SignupPasswardInput,
 #SignUpEmailInput,
-#SignupRe-enterPasswardInput{
+#SignupRe-enterPasswardInput,
+#SignUpOTPInput,
+#SignUpMobileOTPInput,
+#VerifyOTPPageInput,
+#SetPasswardInput,
+#VerifyPasswardInput{
     color: white;
     background:transparent;
     border: none;
@@ -3541,9 +3565,25 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
     border-radius: 5px;
     outline: none;
 }
+#SignUpOTPInput,
+#SignUpMobileOTPInput{
+    display: none;
+}
+
+#EmailOTP,
+#MobileOTP{
+    display: none;
+}
 ::placeholder{
     color: white;
 }
+
+#EmailOTP:checked ~ #SignUpOTPInput{
+  display: inline;
+}
+#MobileOTP:checked ~ #SignUpMobileOTPInput{
+    display: inline;
+  }
 
 #LoginBtnSignInBtn{
     width: 100px;
@@ -3560,12 +3600,12 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 .LoginBgImg{
     width: 100%;
     height: 100%;
-    filter: blur(2px);
+    /* filter: blur(2px); */
 }
 
 #LoginBtnSignInBtn:hover{
     transform: scale(1.06);
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     border: 1px solid white;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -3578,7 +3618,8 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 }
 
 #Loginlogo{
-    width: 100px;
+    width: 170px;
+    height: 75px;
     /* height: 80px; */
 }
 
@@ -3606,7 +3647,7 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 }
 .StartStreamingBtn:hover{
     transform: scale(1.06);
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     border: 1px solid white;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -3645,43 +3686,43 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 }
 
 #English:checked ~ .EnglishBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Marathi:checked ~ .MarathiBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Hindi:checked ~ .HindiBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Kannada:checked ~ .KannadaBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Tamil:checked ~ .TamilBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Telegu:checked ~ .TeleguBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Malayalam:checked ~ .MalayalamBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
@@ -3712,7 +3753,7 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 
 #SelectLanguageNextBtn:hover{
     transform: scale(1.06);
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     border: 1px solid white;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -3748,61 +3789,61 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 }
 
 #Action:checked ~ .ActionBox{
-    background-color: lightgreen;
+    background-color: #ffe79e    ;
     color: black;
     transition: 0.5s;
 }
 
 #Horror:checked ~ .HorrorBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Thriller:checked ~ .ThrillerBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Romantic:checked ~ .RomanticBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Drama:checked ~ .DramaBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Science_Fiction:checked ~ .Science_FictionBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Comedy:checked ~ .ComedyBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Documentary:checked ~ .DocumentaryBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Adventure:checked ~ .AdventureBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }
 
 #Mystery:checked ~ .MysteryBox{
-    background-color: lightgreen;
+    background-color: #ffe79e;
     color: black;
     transition: 0.5s;
 }

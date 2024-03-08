@@ -18,25 +18,32 @@
 </head>
 <body>
     <section>
+        
         <div class="Container">
             <!-- <img src="https://png.pngtree.com/background/20210710/original/pngtree-creative-black-gold-21st-shanghai-international-film-festival-banner-picture-image_1061201.jpg" alt="" class="LoginBgImg"> -->
-            <img src="https://w.wallhaven.cc/full/0w/wallhaven-0w2de6.jpg" alt="" class="LoginBgImg">
+            <img src="images/SelectLanguageBackgroundImg.png" alt="" class="LoginBgImg">
             <div class="loginContaier">
                 <br>
-                <img src="images/C1(transparent white) (2).png" alt="logo" id="Loginlogo">
+                <img src="images/BigWigLogo2.png" alt="logo" id="Loginlogo">
                 <br>
                 <h1>Sign Up</h1>
-                <input type="text" placeholder="Enter Username" id="SignUpUsernameInput" required>
+                <input type="text" placeholder="Name" id="SignUpUsernameInput" required>
                 <br>
-                <input type="email" placeholder="Enter E-mail Address" id="SignUpEmailInput" required>
+                <input type="checkbox" id="EmailOTP">
+                <input type="email" placeholder="E-mail" id="SignUpEmailInput" required>
                 <br>
-                <input type="password" placeholder="Enter Passward" id="SignupPasswardInput" required>
-                <br>
-                <input type="password" placeholder="Re-enter Passward" id="SignupRe-enterPasswardInput">
+                <input type="text" placeholder="OTP" id="SignUpOTPInput">
+                
+                <input type="checkbox" id="MobileOTP">
+                <input type="text" placeholder="Mobile No." id="SignupPasswardInput" required>
+                <input type="text" placeholder="OTP" id="SignUpMobileOTPInput">
+
                 <br><br>
-                <a href="SelectLanguage.html">
-                <button id="LoginBtnSignInBtn">Sign Up</button>
+                <center>
+                <a href="VerifyOTPPage.html">
+                <button id="LoginBtnSignInBtn">Next</button>
             </a>
+        </center>
                 <br><br>
                 <p>You already have an account <a href="Sign-In.html">Sign in</a>.</p>
             </div>
