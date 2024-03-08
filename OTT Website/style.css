@@ -139,7 +139,7 @@ header ul li a{
 
 #loginbtn:hover {
     transform: scale(1.05);
-    background-color: #ffe79e;
+    background-color: #FFD700;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
     -webkit-box-shadow: -3px -1px 51px -5px rgba(0, 0, 0, 0.54) inset;
     -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -210,7 +210,11 @@ header ul li a{
     color: black;
     transition: 1S;
 }
-
+#watchbtncontainer{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
 .imagesset {
     height: 140px;
     width: 100px;
@@ -3493,9 +3497,9 @@ footer{
     color: lightgreen;
     /* margin-right: 30px; */
 }
-#copyrightlogo{
-    height: 30px;
-    width: 65px;
+#footerLogo{
+    height: 90px;
+    width: 180px;
 }
 .copyrightsection{
     background-color: black;
@@ -3846,4 +3850,28 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
     background-color: #ffe79e;
     color: black;
     transition: 0.5s;
+}
+
+.TrailerContainer{
+    max-width: 650px;
+    min-width: 200px;
+    height: 350px;
+    background-color:transparent;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+}
+.fa-circle-xmark{
+    font-size: 30px;
+    /* float: right; */
+    /* margin-top: -40px; */
+    /* margin-right: -20px; */
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: 10px;
 }

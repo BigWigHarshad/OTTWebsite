@@ -11,11 +11,13 @@ window.addEventListener("scroll",function(){
 
 
 function moneyheiest() {
-    document.getElementById("content").innerHTML='When the nathttps://wallpapercave.com/wp/wp8751913.jpgional mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.';
+    document.getElementById("content").innerHTML='When the mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.';
     document.querySelector('#content').style.float="right";
     document.querySelector('#content').style.padding="20px";
     document.querySelector('#imgcontainer').style.background="url('https://wallpapercave.com/wp/wp8751913.jpg') center center / cover";
     document.querySelector('.moneyheistimg').style.border="2px solid black";
+    document.querySelector('.moneyheistimg').style.transform="scale(1.5)";
+
 }
 
 function dunki() {
@@ -46,5 +48,19 @@ function GodzillaVSKong() {
     document.querySelector('#imgcontainer').style.background="url('https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/f1c6ef16-40b2-4ef5-89ed-547decd9e620/5dea83be6452c285c4bcf58f0f1c951146040f2b.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom') center center / cover";
     document.querySelector('.moneyheistimg').style.border="2px solid black";
 }
+
+$(document).ready(function(){
+    $("#watchTrailerBtn").click(function(){
+        
+        $(".TrailerContainer").toggle();
+
+    });
+
+    $(".TrailerContainerCloseBtn").click(function(){
+        
+
+        $(".TrailerContainer").toggle();
+    });
+});
 
 
