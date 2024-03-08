@@ -3,11 +3,6 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",window.scrollY >10);
 })
 
-// function moneyheiest() {
-//     document.getElementById("content").innerHTML='When the national mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.';
-//     document.querySelector('#imgcontainer').style.background="url('') contain no-repeat";
-//     document.querySelector('#moneyheistimg').style.border= "10px solid black";
-//     let description="When the national mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.";
 
 
 function moneyheiest() {
@@ -54,12 +49,15 @@ $(document).ready(function(){
         
         $(".TrailerContainer").toggle();
 
+
     });
 
     $(".TrailerContainerCloseBtn").click(function(){
         
 
         $(".TrailerContainer").toggle();
+        location.reload(true)
+
     });
 });
 

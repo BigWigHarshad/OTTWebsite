@@ -3853,16 +3853,15 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 }
 
 .TrailerContainer{
-    max-width: 650px;
-    min-width: 200px;
-    height: 350px;
-    background-color:transparent;
-    /* position: absolute; */
+    /* width: 650px; */
+    /* min-width: 200px; */
+    /* height: 350px; */
+    /* background-color:transparent; */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    position: fixed;
     display: none;
 }
 .fa-circle-xmark{
