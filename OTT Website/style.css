@@ -18,8 +18,13 @@ body {
     background-repeat: no-repeat;
     margin: 0PX;
 }
+.navbar-nav{
+    text-align: center;
+    background-color: black;
+}
 
-header{
+
+/* header{
     position: fixed;
     top: 0;
     left: 0;
@@ -28,57 +33,10 @@ header{
     justify-content: space-between;
     align-items: center;;
     transition: 0.6s;
-    /* padding: 40px 100px; */
     z-index: 100000;
     display: none;
-}
-.sticky{
-    background-color: black;
-    display: inline-flex;
-}
-header .logo{
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition:0.6s;
-}
+} */
 
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li{
-    position: relative;
-    list-style: none;
-    transition: 0.5s;
-
-}
-
-header ul li a:hover{
-    /* transform: scale(2); */
-    color: #ffe79e;
-    transition: 0.5s;
-    
-
-}
-
-header ul li a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
-
-}
 
 /* header {
     position: fixed;
@@ -134,12 +92,14 @@ header ul li a{
     color: white;
     border: 1px solid white;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
 
 }
 
 #loginbtn:hover {
     transform: scale(1.05);
-    background-color: #FFD700;
+    background-color: #ffd700;
     box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
     -webkit-box-shadow: -3px -1px 51px -5px rgba(0, 0, 0, 0.54) inset;
     -moz-box-shadow: -3px -1px 51px -5px rgba(10, 10, 10, 0.54) inset;
@@ -187,10 +147,11 @@ header ul li a{
 
 #logo {
     /* height: 130px; */
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     margin: 0px;
     padding: 0px;
+    float: left;
 }
 .imagesSelector{
     position: absolute;
@@ -3668,7 +3629,7 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 #SelectGenres{
     background-image: url(images/SelectLanguageBackgroundImg.png);
     background-size: 100% 100%;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 }
 
@@ -3864,6 +3825,8 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
     border-radius: 10px;
     display: none;
 }
+
+
 .fa-circle-xmark{
     font-size: 30px;
     /* float: right; */
@@ -3873,4 +3836,42 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
     position: absolute;
     right: -10px;
     top: 10px;
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #FFD700;
+}
+.nav-link.active{
+    color: red;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
+    /* height: 50px; */
+}
+.dropdown-item{
+    color: white;
+    background-color: black;
+}
+.nav-item{
+    background-color: black;
+    margin-right: 20px;
+}
+
+.dropdown-item:hover{
+    color: #ffd700;
+    background-color: black;
+}
+.navbar-toggler{
+    display: flex;
+    justify-content: end;
+}
+.dropdown{
+    background-color: black;
+}
+.dropdown-menu{
+    padding: 0px;
 }
