@@ -24,18 +24,18 @@ body {
 }
 
 
-/* header{
+header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
-    align-items: center;;
+    /* justify-content: space-between; */
+    /* align-items: center;; */
     transition: 0.6s;
-    z-index: 100000;
-    display: none;
-} */
+    /* z-index: 100000; */
+    /* display: none; */
+} 
 
 
 /* header {
@@ -77,11 +77,102 @@ body {
     font-size: 18px;
     float: right;
     font-weight: bold;
-    margin-top: 40px;
-    padding-right: 30px;
+    margin-top: 100px;
+    margin-right: 20px;
     text-align: right;
     /* background-image: linear-gradient(-60deg,rgba(0, 0, 0, 0.72) 20%, hwb(0 50% 50% / -93)); */
 }
+@media only screen and (max-width: 976px){
+    #content{
+        font-size: 15px;
+        margin-right: 60px;
+    }
+    #watchbtncontainer{
+        top: 60%;
+        left: 5%;
+    }
+    .imagesSelector{
+        top: 48%;
+        right: 5%;
+    }
+    #imgcontainer{
+        width: 100vw;
+        height: 480px;
+    }
+}
+
+@media only screen and (max-width: 906px){
+    #content{
+        font-size: 14px;
+    }
+    #watchbtncontainer{
+        top: 55%;
+        left: 5%;
+        transform: scale(0.9);
+    }
+    .imagesSelector{
+        top: 44%;
+        right: 5%;
+        transform: scale(0.9);
+    }
+    #imgcontainer{
+        width: 100vw;
+        height: 480px;
+    }
+}
+
+@media only screen and (max-width: 828px){
+    #content{
+        font-size: 12px;
+        margin-right: 30px;
+    }
+    #watchbtncontainer{
+        /* position: absolute; */
+        top: 44%;
+        /* right: 82%; */
+        margin-left: -36px;
+        transform: scale(0.7);
+    }
+    .imagesSelector{
+        top: 39%;
+        margin-right: -60px;
+        transform: scale(0.9);
+    }
+    #imgcontainer{
+        width: 100vw;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 694px){
+    #content{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    #watchbtncontainer{
+        /* position: absolute; */
+        top: 37%;
+        /* right: 82%; */
+        margin-left: -40px;
+        transform: scale(0.6);
+        display: block;
+    }
+    .imagesSelector{
+        top: 48%;
+        margin-right: -80px;
+        transform: scale(0.8);
+        padding: 10px;
+        height: 180px;
+        border-radius: 0px 0px 0px 40px;
+        background-color: red;
+
+    }
+    #imgcontainer{
+        width: 100vw;
+        height: 350px;
+    }
+}
+
 #loginbtn {
     width: 80px;
     border-radius: 20px;
@@ -91,7 +182,7 @@ body {
     background-color: transparent;
     color: white;
     border: 1px solid white;
-    transition: 0.5s;
+    transition: 0.5s;-55vw
     display: flex;
     justify-content: center;
 
@@ -174,7 +265,7 @@ body {
 #watchbtncontainer{
     position: absolute;
     bottom: 15%;
-    left: 5%;
+    left: 1%;
 }
 .imagesset {
     height: 140px;
