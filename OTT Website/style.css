@@ -13,9 +13,9 @@ body {
 #imgcontainer {
     width: 100vw;
     height: 100vh;
-    background-image: url(images/stranger_things_Background_image.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    /* background-image: url(images/stranger_things_Background_image.jpg); */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
     margin: 0PX;
 }
 .navbar-nav{
@@ -85,15 +85,22 @@ body {
 
 #content {
     width: 350px;
+    position: absolute;
+    top: 10%;
+    right: 10px;
     height: auto;
     font-size: 18px;
-    float: right;
+    /* float: right; */
     font-weight: bold;
-    margin-top: 100px;
-    margin-right: 20px;
+    /* margin-top: 100px; */
+    /* margin-right: 20px; */
     text-align: right;
     /* background-image: linear-gradient(-60deg,rgba(0, 0, 0, 0.72) 20%, hwb(0 50% 50% / -93)); */
 }
+#mainimg{
+    width: 100vw;
+}
+
 @media only screen and (max-width: 976px){
     #content{
         font-size: 15px;
@@ -423,6 +430,23 @@ body {
     }
     .category{
         margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width:378px) and (min-width:300px) {
+    #watchbtncontainer{
+        /* position: absolute; */
+        top: -2%;
+        /* right: 82%; */
+        margin-left: -30px;
+        transform: scale(0.5);
+        /* display: block; */
+        width: 150px;
+    }
+
+    #TrailerFrame{
+        width: 300px;
+        height: 200px;
     }
 }
 
@@ -4223,5 +4247,4 @@ box-shadow: 0px 0px 60px 30px rgba(0,0,0,0.98);
 .introvideo{
     width: 100vw;
     height:100vh;
-    
 }
